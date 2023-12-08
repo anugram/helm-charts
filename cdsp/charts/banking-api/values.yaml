@@ -33,7 +33,7 @@ dpg_configuration:
   secretname: dpg-secret
   configmapname: dpg-configmap
   kms: 192.168.2.213
-  appurl: http://192.168.2.47:8080
+  appurl: http://localhost:8080
   tlsenabled: false
   reg_token: zxIn95SfQix9wrYINWoVFCKusfMqk35wlhqPLtZnIrYSqDYUK92KF1ucE6bYNf04
   
