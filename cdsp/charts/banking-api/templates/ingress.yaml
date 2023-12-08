@@ -15,4 +15,4 @@ spec:
             service:
               name: {{.Values.service.name}}
               port:
-                number: {{.Values.service.dpgnodePort}}
+                number: {{.Values.service.dpgPort}}
