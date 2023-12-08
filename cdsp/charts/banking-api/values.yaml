@@ -6,9 +6,9 @@ deployment:
   #proxyimagename: banking-app-proxy-container
   dpgimagename: dpg-container
   replicas: 1
-  apiimage: 192.168.2.221:5000/bank_app_api
+  apiimage: localhost:5000/bank_app_api
   #proxyimage: 192.168.2.221:5000/banking-demo-backend-proxy
-  dpgimage: 192.168.2.221:5000/ciphertrust-data-protection-gateway
+  dpgimage: localhost:5000/ciphertrust-data-protection-gateway
 
 service:
   name: banking-app-api-svc
