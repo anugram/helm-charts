@@ -7,10 +7,11 @@ spec:
     run: {{.Values.runlabel}}
   type: {{.Values.service.type}}
   ports:
-    - port: {{.Values.service.apiPort}}
+    - name: {{.Values.service.apiname}}
+      port: {{.Values.service.apiPort}}
       targetPort: {{.Values.service.apitargetPort}}
       #nodePort: {{.Values.service.apinodePort}}
-      #name: {{.Values.service.apiname}}
-    - port: {{.Values.service.dpgPort}}
+    - name: {{.Values.service.dpgname}}
+      port: {{.Values.service.dpgPort}}
       targetPort: {{.Values.service.dpgtargetPort}}
       #nodePort: {{.Values.service.dpgnodePort}}
