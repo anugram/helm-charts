@@ -16,10 +16,12 @@ spec:
             imagePullPolicy: IfNotPresent
             name: {{.Values.deployment.apiimagename}}
             ports:
-            - containerPort: 8080
+            - containerPort: {{.Values.deployment.apitargetPort}}
           - image: {{.Values.deployment.dpgimage}}
             imagePullPolicy: IfNotPresent
             name: {{.Values.deployment.dpgimagename}}
+            ports:
+            - containerPort: {{.Values.deployment.dpgtargetPort}}
             env:
              - name: KMS
                valueFrom:
