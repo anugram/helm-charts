@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  banking-api:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-12-15T14:13:38.6090365-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 1dde9cb06e2071aa818ee84fcb8fd85e9633a398e2f0a03af2016eafb49e04ac
+    name: banking-api
+    type: application
+    urls:
+    - https://github.com/anugram/helm-charts/banking-api-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-12-15T14:13:38.6061244-05:00"
