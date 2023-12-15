@@ -18,21 +18,6 @@ spec:
           - image: {{.Values.deployment.dpgimage}}
             imagePullPolicy: IfNotPresent
             name: {{.Values.deployment.dpgimagename}}
-            readinessProbe:
-              httpGet:
-                path: /healthz
-                port: {{.Values.service.appPort}}
-                scheme: HTTP
-              initialDelaySeconds: 10
-              periodSeconds: 5
-            livenessProbe:
-              httpGet:
-                path: /liveness
-                port: {{.Values.service.appPort}}
-                scheme: HTTP
-              initialDelaySeconds: 10
-              periodSeconds: 10
-
             env:
              - name: KMS
                valueFrom:
@@ -64,7 +49,7 @@ spec:
                   configMapKeyRef:
                     name: {{.Values.configuration.configmapname}}
                     key: DESTINATION_URL
-                    
+
   replicas: {{.Values.deployment.replicas}}
   selector:
       matchLabels:
