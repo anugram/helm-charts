@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "banking-api.fullname" . }}
+  name: {{ include "dpg-quick-start.fullname" . }}
   labels:
-    {{- include "banking-api.labels" . | nindent 4 }}
+    {{- include "dpg-quick-start.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "banking-api.fullname" . }}
+    name: {{ include "dpg-quick-start.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:

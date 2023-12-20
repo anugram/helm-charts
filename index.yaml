@@ -3,7 +3,7 @@ entries:
   banking-api:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-12-19T18:33:37.6804319-05:00"
+    created: "2023-12-19T21:00:47.6603192-05:00"
     description: A Helm chart for Kubernetes
     digest: 1dde9cb06e2071aa818ee84fcb8fd85e9633a398e2f0a03af2016eafb49e04ac
     name: banking-api
@@ -14,12 +14,12 @@ entries:
   dpg-quick-start:
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-12-19T18:33:37.6828317-05:00"
+    created: "2023-12-19T21:00:47.6635098-05:00"
     description: A Helm chart for running quick demo for DPG on Kubernetes
-    digest: a945185d82c6b8216b9b0a9c233e155a684f038d098cebc088f25945bc757ea8
+    digest: 77609bade22d176b22471f60e6d83a5da085fda37f75ce08578f90ea1c9d32e7
     name: dpg-quick-start
     type: application
     urls:
     - https://anugram.github.io/helm-charts/dpg-quick-start-1.0.0.tgz
     version: 1.0.0
-generated: "2023-12-19T18:33:37.6775055-05:00"
+generated: "2023-12-19T21:00:47.6417862-05:00"
