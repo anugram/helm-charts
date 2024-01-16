@@ -1,0 +1,28 @@
+runlabel: appserver
+
+deployment:
+  name: demo-cte-dpg-secrets-ui
+  appimagename: demo-backend
+  dpgimagename: dpg-container
+  replicas: 1
+  appimage: localhost:5000/unified-demo-api
+  dpgimage: thalesciphertrust/ciphertrust-data-protection-gateway:1.1.0
+
+service:
+  name: svc
+  type: NodePort
+  apiappname: app-ui-port
+  apiappnodePort: 32081
+  apiappPort: 3000
+  apiapptargetPort: 3000
+
+configuration:
+  secretname: dpg-secret
+  configmapname: dpg-configmap
+  kms: 192.168.2.213
+  appurl: http://localhost:8080
+  tlsenabled: false
+  reg_token: IfFs9FuVP79hGSWz5SujQBRBOCZZfDIw0LCJ2nLEqzTpxX1HsmX2fiaYXD1P8fkw
+  
+  servercrt: secretCert
+  serverkey: secretKey
