@@ -19,4 +19,4 @@ configuration:
   api_server_port: "32081"
   auth_server: "https://cdsp.kinde.com"
   auth_server_client_id: "key"
-  auth_server_redirect_url: "http://localhost:3000"
+  auth_server_redirect_url: "http://localhost:32080"

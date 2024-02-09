@@ -19,13 +19,13 @@ spec:
               - name: API_IP
                 value: {{.Values.configuration.api_server_ip}}
               - name: API_PORT
-                value: {{.Values.configuration.api_server_port}}
-              - name: AUTH_SERVER
-                value: {{.Values.configuration.auth_server}}
-              - name: AUTH_CLIENT
-                value: {{.Values.configuration.auth_server_client_id}}
-              - name: AUTH_REDIRECT_URL
-                value: {{.Values.configuration.auth_server_redirect_url}}
+                value: "32081"
+              # - name: AUTH_SERVER
+              #   value: {{.Values.configuration.auth_server}}
+              # - name: AUTH_CLIENT
+              #   value: {{.Values.configuration.auth_server_client_id}}
+              # - name: AUTH_REDIRECT_URL
+              #   value: {{.Values.configuration.auth_server_redirect_url}}
 
   replicas: {{.Values.deployment.replicas}}
   selector:

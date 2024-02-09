@@ -1,7 +1,7 @@
 runlabel: appserver
 
 deployment:
-  name: demo-cte-dpg-secrets-ui
+  name: demo-cte-dpg-secrets-api
   appimagename: demo-backend
   dpgimagename: dpg-container
   replicas: 1
@@ -9,12 +9,12 @@ deployment:
   dpgimage: thalesciphertrust/ciphertrust-data-protection-gateway:1.1.0
 
 service:
-  name: svc
+  name: svc-api
   type: NodePort
-  apiappname: app-ui-port
+  apiappname: app-api-port
   apiappnodePort: 32081
-  apiappPort: 3000
-  apiapptargetPort: 3000
+  apiappPort: 8080
+  apiapptargetPort: 8080
 
 configuration:
   secretname: dpg-secret
@@ -26,3 +26,18 @@ configuration:
   
   servercrt: secretCert
   serverkey: secretKey
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+ingress:
+  enabled: true
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
