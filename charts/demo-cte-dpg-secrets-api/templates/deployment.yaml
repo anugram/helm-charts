@@ -11,6 +11,10 @@ spec:
         labels:
           run: {{.Values.runlabel}}
      spec:
+        volumes:
+          - name: test-vol
+            persistentVolumeClaim:
+              claimName: cte-claim
         containers:
             - image: {{.Values.deployment.appimage}}
               imagePullPolicy: IfNotPresent

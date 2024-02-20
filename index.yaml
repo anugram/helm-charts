@@ -3,7 +3,7 @@ entries:
   banking-api:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-30T10:18:04.6456617-05:00"
+    created: "2024-02-20T13:57:48.9293847-05:00"
     description: A Helm chart for Kubernetes
     digest: 1dde9cb06e2071aa818ee84fcb8fd85e9633a398e2f0a03af2016eafb49e04ac
     name: banking-api
@@ -14,9 +14,9 @@ entries:
   demo-cte-dpg-secrets-api:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-30T10:18:04.6544514-05:00"
+    created: "2024-02-20T13:57:48.9311111-05:00"
     description: Helm Chart for Thales CTE, DPG, and Secrets Management Demo Backend
-    digest: 9d4b7701852670adb3bbf5400fe402000b24ed271ab719f944be5be06144c324
+    digest: 3f343f8cd5f3c75eca5fd1c66542d936cf64d91da562a5ff114e92eb7aec9787
     name: demo-cte-dpg-secrets-api
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   demo-cte-dpg-secrets-ui:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-30T10:18:04.6618114-05:00"
+    created: "2024-02-20T13:57:48.9327092-05:00"
     description: Helm Chart for Thales CTE, DPG, and Secrets Management Demo UI
-    digest: 8e7d3ed060c50ca579ea84b2fe2e7bfb82bed4c7b48f608c20008d7cf52f93f7
+    digest: faa8713d3d31cf4f9527fd83f8f7b967a6769715acea5f1d1162ebcf854f1924
     name: demo-cte-dpg-secrets-ui
     type: application
     urls:
@@ -36,7 +36,7 @@ entries:
   dpg-quick-start:
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2024-01-30T10:18:04.6700316-05:00"
+    created: "2024-02-20T13:57:48.9420731-05:00"
     description: A Helm chart for running quick demo for DPG on Kubernetes
     digest: 77609bade22d176b22471f60e6d83a5da085fda37f75ce08578f90ea1c9d32e7
     name: dpg-quick-start
@@ -44,4 +44,4 @@ entries:
     urls:
     - https://anugram.github.io/helm-charts/dpg-quick-start-1.0.0.tgz
     version: 1.0.0
-generated: "2024-01-30T10:18:04.6373977-05:00"
+generated: "2024-02-20T13:57:48.9212193-05:00"
