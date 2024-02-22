@@ -19,7 +19,7 @@ spec:
               - name: API_IP
                 value: {{.Values.configuration.api_server_ip}}
               - name: API_PORT
-                value: {{.Values.configuration.api_server_port}}
+                value: "9000"
               # - name: AUTH_SERVER
               #   value: {{.Values.configuration.auth_server}}
               # - name: AUTH_CLIENT
