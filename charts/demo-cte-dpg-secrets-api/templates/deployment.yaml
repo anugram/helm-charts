@@ -17,7 +17,7 @@ spec:
               claimName: cte-claim
         containers:
             - image: {{.Values.deployment.appimage}}
-              imagePullPolicy: IfNotPresent
+              imagePullPolicy: {{.Values.deployment.pullPolicy}}
               name: {{.Values.deployment.appimagename}}
               env:
                 - name: PV_UPLOAD_PATH
@@ -27,7 +27,7 @@ spec:
                   name: test-vol
 {{- if .Values.configuration.addSideContainer }}
             - image: {{.Values.deployment.dpgimage}}
-              imagePullPolicy: IfNotPresent
+              imagePullPolicy: {{.Values.deployment.pullPolicy}}
               name: {{.Values.deployment.dpgimagename}}
               env:
                 - name: KMS
